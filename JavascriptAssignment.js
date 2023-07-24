@@ -20,6 +20,7 @@ function checkPrimeOrNot(number){
 
 
 let fibonacciProgram = (upperLimit) => {
+    let sum=0
   if(upperLimit == 0){
       return []
   }
@@ -30,12 +31,17 @@ let fibonacciProgram = (upperLimit) => {
       return [0, 1]
   }
   else{
+        let sum = 1;
       let fibonacciSeries = [0, 1]
       for (let i = 2; i < upperLimit; i++) {
           let nextTerm = fibonacciSeries[i-2] + fibonacciSeries[i-1]
+          sum=sum+nextTerm
           fibonacciSeries.push(nextTerm)
+          
       }
-      return fibonacciSeries
+      console.log("Fibonacci series is "+fibonacciSeries);
+      return "sum is "+sum
+      
   }
 }
 
