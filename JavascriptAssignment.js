@@ -20,7 +20,6 @@ function checkPrimeOrNot(number){
 
 
 let fibonacciProgram = (upperLimit) => {
-    let sum=0
   if(upperLimit == 0){
       return []
   }
